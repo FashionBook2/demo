@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Dora/AndroidStudioProjects/fasionbook/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1" />
+        <entry key="..\:/Users/Dora/AndroidStudioProjects/fasionbook/app/src/main/res/drawable-v24/ic_logor.xml" value="0.17314814814814813" />
+        <entry key="..\:/Users/Dora/AndroidStudioProjects/fasionbook/app/src/main/res/drawable/bg_main.xml" value="0.11666666666666667" />
+        <entry key="..\:/Users/Dora/AndroidStudioProjects/fasionbook/app/src/main/res/drawable/cs_custom_progressbar.xml" value="0.1" />
+        <entry key="..\:/Users/Dora/AndroidStudioProjects/fasionbook/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
+        <entry key="..\:/Users/Dora/AndroidStudioProjects/fasionbook/app/src/main/res/drawable/ic_logo.xml" value="0.17314814814814813" />
+        <entry key="..\:/Users/Dora/AndroidStudioProjects/fasionbook/app/src/main/res/drawable/ic_love.xml" value="0.1" />
+        <entry key="..\:/Users/Dora/AndroidStudioProjects/fasionbook/app/src/main/res/drawable/ic_no_internet.xml" value="0.1" />
+        <entry key="..\:/Users/Dora/AndroidStudioProjects/fasionbook/app/src/main/res/drawable/ic_warning.xml" value="0.1" />
+        <entry key="..\:/Users/Dora/AndroidStudioProjects/fasionbook/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/Dora/AndroidStudioProjects/fasionbook/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.10648148148148148" />
+        <entry key="..\:/Users/Dora/AndroidStudioProjects/fasionbook/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.10648148148148148" />
+        <entry key="..\:/Users/Dora/AndroidStudioProjects/fasionbook/app/src/main/res/mipmap/ic_logo.xml" value="0.221875" />
+        <entry key="..\:/flutter/bin/caches/transforms-3/1f32e1a2627ee7417c8e63fffba2f220/transformed/appcompat-1.3.1/res/drawable/abc_ratingbar_indicator_material.xml" value="0.3828125" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
