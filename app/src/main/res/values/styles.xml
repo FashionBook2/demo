@@ -20,7 +20,7 @@
     </style>
 
     <style name="Button3Style" parent="Theme.AppCompat.Light">
-        <item name="colorButtonNormal">#FFD764</item>
-        <item name="colorControlHighlight">#FFB751</item>
+        <item name="colorButtonNormal">#FFFFFFFF</item>
+        <item name="colorControlHighlight">#FFFFFFFF</item>
     </style>
 </resources>

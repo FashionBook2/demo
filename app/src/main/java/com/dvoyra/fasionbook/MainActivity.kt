@@ -26,13 +26,9 @@ import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatDelegate
 import java.io.File
 import java.io.IOException
-import java.io.UnsupportedEncodingException
-import java.security.InvalidAlgorithmParameterException
-import java.security.InvalidKeyException
 import java.security.NoSuchAlgorithmException
 import java.security.SecureRandom
 import java.security.spec.InvalidKeySpecException
-import java.security.spec.InvalidParameterSpecException
 import java.text.SimpleDateFormat
 import java.util.*
 import javax.crypto.*
@@ -106,7 +102,6 @@ class MainActivity : Activity() {
     @SuppressLint("SetJavaScriptEnabled")
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     private fun requestWebView() {
-        /** Layout of webview screen View  */
         if (internetCheck(mContext)) {
             mWebView.visibility = View.VISIBLE
             layoutNoInternet.visibility = View.GONE
@@ -295,7 +290,6 @@ class MainActivity : Activity() {
         fun generateKey(): SecretKey {
             val random = SecureRandom()
             val key = byteArrayOf(1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 0, 0, 0, 0)
-            //random.nextBytes(key);
             return SecretKeySpec(key, "AES")
         }
 

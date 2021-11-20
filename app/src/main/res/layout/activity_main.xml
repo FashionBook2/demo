@@ -4,46 +4,52 @@
     android:id="@+id/swipe_container"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+
     <RelativeLayout
         android:id="@+id/layout_webview"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+
         <WebView
             android:id="@+id/webview"
-            android:visibility="gone"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+
         <RelativeLayout
             android:id="@+id/layout_splash"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:visibility="visible"
-            android:background="#80000000">
+            android:background="#80000000"
+            android:visibility="visible">
+
             <View
                 android:id="@+id/view_splash"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@drawable/bg_main"/>
+                android:background="@drawable/bg_main" />
+
             <ImageView
                 android:id="@+id/app_logo"
                 android:layout_width="400dp"
                 android:layout_height="400dp"
-                android:contentDescription="@string/app_name"
-                android:src="@mipmap/fb_logo"
-                android:layout_marginTop="139dp"
                 android:layout_alignParentTop="true"
-                android:layout_centerHorizontal="true" />
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="139dp"
+                android:contentDescription="@string/app_name"
+                android:src="@mipmap/fb_logo" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/app_name"
                 android:layout_below="@+id/app_logo"
+                android:layout_centerHorizontal="true"
                 android:layout_marginTop="20dp"
-                android:textSize="20dp"
+                android:text="@string/app_name"
                 android:textColor="#fff"
-                android:visibility="gone"
+                android:textSize="20dp"
                 android:textStyle="bold"
-                android:layout_centerHorizontal="true"/>
+                android:visibility="gone" />
 
             <LinearLayout
                 android:id="@+id/layout_footer"
@@ -53,53 +59,57 @@
                 android:layout_centerHorizontal="true"
                 android:layout_marginBottom="5dp"
                 android:orientation="horizontal">
-<!--                <TextView-->
-<!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:text="Made with"-->
-<!--                    android:textColor="@color/colorWhite"/>-->
-<!--                <ImageView-->
-<!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="match_parent"-->
-<!--                    android:layout_marginLeft="5dp"-->
-<!--                    android:layout_marginRight="5dp"-->
-<!--                    app:srcCompat="@drawable/ic_love" />-->
-<!--                <TextView-->
-<!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:text="InfixSoft"-->
-<!--                    android:textColor="@color/colorWhite" />-->
+                <!--                <TextView-->
+                <!--                    android:layout_width="wrap_content"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:text="Made with"-->
+                <!--                    android:textColor="@color/colorWhite"/>-->
+                <!--                <ImageView-->
+                <!--                    android:layout_width="wrap_content"-->
+                <!--                    android:layout_height="match_parent"-->
+                <!--                    android:layout_marginLeft="5dp"-->
+                <!--                    android:layout_marginRight="5dp"-->
+                <!--                    app:srcCompat="@drawable/ic_love" />-->
+                <!--                <TextView-->
+                <!--                    android:layout_width="wrap_content"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:text="InfixSoft"-->
+                <!--                    android:textColor="@color/colorWhite" />-->
             </LinearLayout>
         </RelativeLayout>
+
         <RelativeLayout
             android:id="@+id/layout_no_internet"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:visibility="gone"
-            android:background="#80000000">
+            android:background="#80000000"
+            android:visibility="visible">
+
             <View
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:alpha=".90"
-                android:background="@drawable/bg_main"/>
+                android:background="@drawable/bg_main" />
+
             <androidx.appcompat.widget.AppCompatImageView
                 android:id="@+id/img_no_internet"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:contentDescription="@string/app_name"
-                android:scaleType="centerCrop"
-                android:layout_marginTop="139dp"
                 android:layout_alignParentTop="true"
                 android:layout_centerHorizontal="true"
+                android:layout_marginTop="139dp"
+                android:contentDescription="@string/app_name"
+                android:scaleType="centerCrop"
                 app:srcCompat="@drawable/ic_warning" />
+
             <TextView
                 android:id="@+id/txt_title"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="0dp"
                 android:layout_below="@+id/img_no_internet"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="20dp"
-                android:text="Ой!"
+                android:text="   "
                 android:textColor="@color/colorWhite"
                 android:textSize="64sp"
                 android:textStyle="bold" />
@@ -110,11 +120,14 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/txt_title"
                 android:layout_centerHorizontal="true"
-                android:layout_marginTop="20dp"
-                android:text="Отсутствует подключение к сети интернет. \n Проверьте подключение или повторите попытку"
+                android:layout_marginTop="40dp"
+                android:gravity="center"
+                android:padding="20dp"
+                android:text="ДЛЯ РАБОТЫ ПРИЛОЖЕНИЯ НЕОБХОДИМО \n\n ПОДКЛЮЧЕНИЕ К СЕТИ ИНТЕРНЕТ \n\n Проверьте подключение "
                 android:textAlignment="center"
+                android:textAllCaps="true"
                 android:textColor="@color/colorWhite"
-                android:textSize="18dp" />
+                android:textSize="14sp" />
 
             <Button
                 android:id="@+id/btn_try_again"
@@ -122,22 +135,25 @@
                 android:layout_height="60dp"
                 android:layout_below="@+id/txt_detail"
                 android:layout_centerHorizontal="true"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="40dp"
                 android:text="ПОВТОРИТЬ ПОПЫТКУ"
-                android:textColor="@color/colorWhite"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:textStyle="bold"
                 android:theme="@style/Button3Style" />
         </RelativeLayout>
+
         <ProgressBar
             android:id="@+id/progressBar"
+            style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:indeterminate="true"
             android:layout_centerHorizontal="true"
-            android:visibility="visible"
-            android:indeterminateTintMode="src_atop"
+            android:indeterminate="true"
             android:indeterminateTint="@color/white"
+            android:indeterminateTintMode="src_atop"
             android:progressDrawable="@drawable/cs_custom_progressbar"
-            style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal" />
+            android:visibility="visible" />
     </RelativeLayout>
     <!--LinearLayout
         android:id="@+id/layout_footer"
